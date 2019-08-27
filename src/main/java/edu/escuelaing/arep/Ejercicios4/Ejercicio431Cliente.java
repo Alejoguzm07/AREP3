@@ -7,14 +7,14 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class Ejercicio43Cliente {
+public class Ejercicio431Cliente {
 
     public static void main(String[] args) throws IOException {
         Socket echoSocket = null;
         PrintWriter out = null;
         BufferedReader in = null;
         try {
-            echoSocket = new Socket("127.0.0.1", 35000);
+            echoSocket = new Socket("127.0.0.1", 35001);
             out = new PrintWriter(echoSocket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(echoSocket.getInputStream()));
         } catch (UnknownHostException e) {
